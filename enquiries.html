@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Enquiries | Coachify</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+
+<div class="sidebar-header">
+   <a href="dashboard.html" class="sidebar-logo">
+    <img src="1.png" class="logo-icon">
+    <strong>Coachify</strong>
+  </a>
+</div>
+
+<nav class="nav">
+<a href="dashboard.html">Dashboard</a>
+<a href="enquiries.html" class="active">Enquiries</a>
+<a href="courses.html">Courses</a>
+<a href="batches.html">Batches</a>
+<a href="attendance.html">Attendance</a>
+<a href="fees.html">Fees</a>
+<a href="reports.html">Report</a>
+<a href="tests.html">Tests</a>
+</nav>
+
+</aside>
+
+
+<!-- MAIN -->
+<div class="content">
+
+<header class="header">
+
+<div class="header-title">
+<h1>Enquiries</h1>
+<p>Manage leads and conversions</p>
+</div>
+
+<button id="openEnquiryModal" class="primary-btn">
++ Add Enquiry
+</button>
+
+</header>
+
+
+<main>
+
+<div class="card">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Student</th>
+<th>Parent</th>
+<th>Phone</th>
+<th>Course</th>
+<th>Batch</th>
+<th>Status</th>
+<th>Notes</th>
+<th>Date</th>
+<th>Action</th>
+</tr>
+
+</thead>
+
+<tbody id="enquiriesTable"></tbody>
+
+</table>
+
+</div>
+
+</main>
+
+</div>
+
+</div>
+
+
+<!-- ADD ENQUIRY MODAL -->
+
+<div id="enquiryModal" class="modal">
+
+<div class="modal-content">
+
+<span id="closeEnquiryModal" class="close">&times;</span>
+
+<h2>Add Enquiry</h2>
+
+<input id="enqName" placeholder="Student Name">
+
+<input id="enqParent" placeholder="Parent Name">
+
+<input id="enqPhone" placeholder="Phone">
+
+<select id="enqCourse"></select>
+
+<select id="enqBatch"></select>
+
+<select id="enqStatus">
+
+<option value="new">New</option>
+<option value="interested">Interested</option>
+<option value="follow-up">Follow-up</option>
+
+</select>
+
+<textarea id="enqNotes" placeholder="Notes"></textarea>
+
+<button id="saveEnquiry" class="primary-btn">
+Save Enquiry
+</button>
+
+<p id="enquiryMsg"></p>
+
+</div>
+
+</div>
+
+<script type="module" src="js/enquiries.js"></script>
+
+</body>
+</html>

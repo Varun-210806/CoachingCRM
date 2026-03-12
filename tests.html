@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tests | Coachify</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="sidebar-header">
+   <a href="dashboard.html" class="sidebar-logo">
+    <img src="1.png" class="logo-icon">
+    <strong>Coachify</strong>
+  </a>
+    </div>
+
+    <nav class="nav">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="enquiries.html">Enquiries</a>
+      <a href="courses.html">Courses</a>
+      <a href="batches.html">Batches</a>
+      <a href="attendance.html">Attendance</a>
+      <a href="fees.html">Fees</a>
+      <a href="reports.html">Report</a>
+      <a href="tests.html" class="active">Tests</a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </div>
+
+  </aside>
+
+
+  <!-- MAIN CONTENT -->
+  <div class="content">
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-title">
+        <h1>Tests</h1>
+        <p>Schedule & Manage Student Tests</p>
+      </div>
+    </header>
+
+
+    <main>
+
+      <!-- Schedule Test -->
+      <div class="card">
+
+        <h3>Schedule New Test</h3>
+
+        <div class="form-grid">
+
+          <input id="testName" placeholder="Test Name" />
+
+          <select id="testCourse"></select>
+
+          <select id="testBatch"></select>
+
+          <input id="testDate" type="date" />
+
+          <input id="totalMarks" type="number" placeholder="Total Marks" />
+
+        </div>
+
+        <button id="saveTest">Schedule Test</button>
+
+        <p class="form-msg" id="testMsg"></p>
+
+      </div>
+
+
+
+      <!-- Scheduled Tests -->
+      <div class="card" style="margin-top:24px;">
+
+        <h3>Scheduled Tests</h3>
+
+        <table class="data-table">
+
+          <thead>
+            <tr>
+              <th>Test</th>
+              <th>Date</th>
+              <th>Total Marks</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody id="testsTable"></tbody>
+
+        </table>
+
+      </div>
+
+
+
+      <!-- Enter Marks -->
+      <div id="enterMarksCard" class="card" style="margin-top:24px; display:none;">
+
+        <h3>Enter Marks</h3>
+
+        <div id="marksSection"></div>
+
+      </div>
+
+
+
+      <!-- Test Results -->
+      <div class="card" style="margin-top:24px;">
+
+        <h3>Test Results</h3>
+
+        <div id="resultsSection"></div>
+
+      </div>
+
+
+
+      <!-- Test Analytics -->
+      <div class="card" style="margin-top:24px;">
+
+        <h3>Test Analytics</h3>
+
+        <div id="analyticsSection"></div>
+
+      </div>
+
+
+
+      <!-- Leaderboard -->
+      <div class="card" style="margin-top:24px;">
+
+        <h3>Leaderboard</h3>
+
+        <div id="leaderboardSection"></div>
+
+      </div>
+
+
+    </main>
+
+  </div>
+
+</div>
+
+
+<script type="module" src="js/tests.js"></script>
+
+</body>
+
+</html>

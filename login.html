@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Coachify</title>
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="auth-page">
+
+  <div class="auth-card">
+
+    <!-- BRANDING -->
+    <div class="auth-header">
+      <div class="auth-logo">
+        <img src="1.png" class="auth-logo-img">
+        <span class="auth-brand">Coachify</span>
+      </div>
+      <h2>Welcome Back</h2>
+      <p>Login to continue managing your institute</p>
+    </div>
+
+    <!-- LOGIN FORM -->
+    <form id="loginForm" class="auth-form">
+
+      <input
+        type="email"
+        id="email"
+        placeholder="Email Address"
+        required
+      />
+
+      <input
+        type="password"
+        id="password"
+        placeholder="Password"
+        required
+      />
+
+      <button type="submit">Login</button>
+    </form>
+
+    <!-- FOOTER -->
+    <div class="auth-footer">
+      Don’t have an account?
+      <a href="signup.html">Create one</a>
+    </div>
+
+  </div>
+
+  <!-- AUTH SCRIPT -->
+  <script type="module" src="js/auth.js"></script>
+
+</body>
+</html>

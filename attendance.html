@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Attendance | Coachify</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+   <a href="dashboard.html" class="sidebar-logo">
+    <img src="1.png" class="logo-icon">
+    <strong>Coachify</strong>
+  </a>
+    </div>
+
+    <nav class="nav">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="enquiries.html">Enquiries</a>
+      <a href="courses.html">Courses</a>
+      <a href="batches.html">Batches</a>
+      <a href="attendance.html" class="active">Attendance</a>
+      <a href="fees.html">Fees</a>
+      <a href="reports.html">Report</a>
+      <a href="tests.html">Tests</a>
+    </nav>
+  </aside>
+
+  <!-- CONTENT -->
+  <div class="content">
+    <header class="header">
+      <div class="header-title">
+        <h1>Attendance</h1>
+        <p>Mark and track daily attendance</p>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- STATS -->
+      <div class="grid grid-4">
+        <div class="card stat">
+          <p>Total Students</p>
+          <div class="stat-value" id="totalStudents">0</div>
+        </div>
+        <div class="card stat">
+          <p>Present</p>
+          <div class="stat-value" id="presentCount">0</div>
+        </div>
+        <div class="card stat">
+          <p>Absent</p>
+          <div class="stat-value" id="absentCount">0</div>
+        </div>
+       
+       <div class="card attendance-filter">
+
+  <div class="filter-row">
+
+    <label>Select Date</label>
+
+    <input type="date" id="attendanceDate">
+
+    <button id="loadAttendanceBtn">View Attendance</button>
+
+  </div>
+
+</div>
+      <!-- TABLE -->
+      <div class="card" style="margin-top:24px;">
+        <table>
+          <thead>
+            <tr>
+              <th>Student</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="attendanceTable">
+            <!-- Filled by JS -->
+          </tbody>
+        </table>
+      </div>
+
+    </main>
+  </div>
+
+</div>
+
+<script type="module" src="js/attendance.js"></script>
+</body>
+</html>

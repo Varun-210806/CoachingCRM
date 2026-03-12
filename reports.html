@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reports | Coachify</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- ================= SIDEBAR ================= -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+   <a href="dashboard.html" class="sidebar-logo">
+    <img src="1.png" class="logo-icon">
+    <strong>Coachify</strong>
+  </a>
+    </div>
+
+    <nav class="nav">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="enquiries.html">Enquiries</a>
+      <a href="courses.html">Courses</a>
+      <a href="batches.html">Batches</a>
+      <a href="attendance.html">Attendance</a>
+      <a href="fees.html">Fees</a>
+      <a href="reports.html" class="active">Reports</a>
+      <a href="tests.html">Tests</a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </div>
+  </aside>
+
+  <!-- ================= CONTENT ================= -->
+  <div class="content">
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+      <div class="header-title">
+        <h1>Reports</h1>
+        <p>Analytics & Performance Overview</p>
+      </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main>
+
+      <div class="grid grid-3">
+
+        <div class="card stat">
+          <p>Total Students</p>
+          <div class="stat-value" id="totalStudents">0</div>
+        </div>
+
+        <div class="card stat">
+          <p>Total Fees Collected</p>
+          <div class="stat-value" id="totalFees">₹0</div>
+        </div>
+
+        <div class="card stat">
+          <p>Attendance %</p>
+          <div class="stat-value" id="attendancePercent">0%</div>
+        </div>
+
+      </div>
+
+      <div class="card">
+        <h3>Course-wise Students</h3>
+        <div id="courseReport"></div>
+      </div>
+
+      <div class="card">
+        <h3>Batch-wise Students</h3>
+        <div id="batchReport"></div>
+      </div>
+
+      <div class="card">
+        <h3>Enquiry Conversion Rate</h3>
+        <div class="stat-value" id="conversionRate">0%</div>
+      </div>
+
+    </main>
+  </div>
+
+</div>
+
+<script type="module" src="js/reports.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fees | Coachify</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+   <a href="dashboard.html" class="sidebar-logo">
+    <img src="1.png" class="logo-icon">
+    <strong>Coachify</strong>
+  </a>
+    </div>
+
+    <nav class="nav">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="enquiries.html">Enquiries</a>
+      <a href="courses.html">Courses</a>
+      <a href="batches.html">Batches</a>
+      <a href="attendance.html">Attendance</a>
+      <a href="fees.html" class="active">Fees</a>
+      <a href="reports.html">Report</a>
+      <a href="tests.html">Tests</a>
+    </nav>
+  </aside>
+
+  <!-- CONTENT -->
+  <div class="content">
+    <header class="header">
+      <div class="header-title">
+        <h1>Fees & Payments</h1>
+        <p>Track fee collection</p>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- STATS -->
+      <div class="grid grid-2">
+        <div class="card stat">
+          <p>Collected</p>
+          <div class="stat-value" id="feesCollected">₹0</div>
+        </div>
+        <div class="card stat">
+          <p>Pending</p>
+          <div class="stat-value" id="feesPending">₹0</div>
+        </div>
+      </div>
+
+      <!-- TABLE -->
+      <div class="card" style="margin-top:24px;">
+        <table>
+          <thead>
+            <tr>
+              <th>Student</th>
+              <th>Amount</th>
+              <th>Paid On</th>
+            </tr>
+          </thead>
+          <tbody id="feesTable">
+            <!-- Filled by JS -->
+          </tbody>
+        </table>
+      </div>
+
+    </main>
+  </div>
+
+</div>
+
+<script type="module" src="js/fees.js"></script>
+</body>
+</html>
