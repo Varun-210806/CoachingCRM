@@ -1052,4 +1052,92 @@ gap:6px;
   width: 50px;
   height:50px;
   object-fit:contain;
+
+}
+/* ===============================
+   MOBILE FIX - REPORTS PAGE
+================================ */
+
+@media (max-width: 900px) {
+
+  .app {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .content {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .header {
+    height: auto;
+    padding: 16px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  main {
+    padding: 16px;
+  }
+
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 14px;
+  }
+
+  .stat {
+    align-items: center;
+  }
+
+  .stat-value {
+    font-size: 22px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px;
+  }
+
+  .nav a {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .sidebar-header {
+    justify-content: center;
+  }
+
+  .header-title h1 {
+    font-size: 18px;
+  }
+
+  .header-title p {
+    font-size: 12px;
+  }
 }
